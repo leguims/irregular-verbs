@@ -133,14 +133,14 @@ function generateVerb() {
   hideAnswer();
 
 	index = Math.floor(Math.random() * dict.length);
-	form = Math.floor(Math.random() * 3);
+	form = Math.floor(Math.random() * 4);
 
   var entry = dict[index];
 
   $('#first').text(entry[0]);
   $('#second').text(entry[1]);
   $('#third').text(entry[2]);
-  $('#russian').text(entry[3]);
+  $('#local').text(entry[3]);
 
   switch (form) {
     case 0:
@@ -148,6 +148,9 @@ function generateVerb() {
       break;
     case 1:
       $('#second').html(inputTag);
+      break;
+    case 3:
+      $('#local').html(inputTag);
       break;
     default:
     $('#third').html(inputTag);
