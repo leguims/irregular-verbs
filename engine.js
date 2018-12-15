@@ -57,9 +57,9 @@ var dict =
     // ['freeze', 'froze', 'frozen', 'замерзать'],
     ['get', 'got', 'got', 'obtenir'],
     // ['give', 'gave', 'given', 'давать'],
-    ['go', 'went', 'gone/been', 'aller'],
+    ['go', 'went', 'gone', 'aller'],
     ['grow', 'grew', 'grown', 'grandir'],
-    ['hang', 'hung', 'hanged/hung', 'suspendre'],
+    ['hang', 'hung', 'hung', 'suspendre'],
     // ['have', 'had', 'had', 'иметь'],
     // ['hear', 'heard', 'heard', 'слышать'],
     // ['hide', 'hid', 'hidden', 'прятаться'],
@@ -195,7 +195,8 @@ function checkVerb() {
     var myInput = $("#myInput").val().trim().toLowerCase();
   myInput = '$' + myInput + '$';
 
-  var correctInput = '$' + dict[index][form].replace('/', '$') + '$';
+  //var correctInput = '$' + dict[index][form].replace('/', '$') + '$';
+  var correctInput = '$' + dict[index][form] + '$'; // Needs all possibilities
   var timer = 0;
 
   if(level == "Hard")
