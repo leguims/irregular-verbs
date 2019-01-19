@@ -18,7 +18,7 @@ var timerKo = 0; // Timer to freeze display if answer is KO
 // Initializing the dictionary
 var dict =
 [
-    // Step 1
+  /*   // Step 1
     ['bear', 'bore', 'borne/born', 'supporter/mettre au monde'],
     ['beat', 'beat', 'beaten', 'battre'],
     ['become', 'became', 'become', 'devenir'],
@@ -90,10 +90,10 @@ var dict =
     ['swing', 'swung', 'swung', 'se balancer'],
     ['take', 'took', 'taken', 'prendre'],
     ['teach', 'taught', 'taught', 'enseigner'],
-    ['throw', 'threw', 'thrown', 'jeter'],
+    ['throw', 'threw', 'thrown', 'jeter'], */
     // ------
     // Step 3
-    ['burst', 'burst', 'burst', ''],
+    ['burst', 'burst', 'burst', 'éclater'],
     ['cost', 'cost', 'cost', 'couter'],
     ['swim', 'swam', 'swum', 'nager'],
     ['keep', 'kept', 'kept', 'garder'],
